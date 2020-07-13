@@ -1,6 +1,11 @@
-#include "sum.h"
-#include <stdio.h>
+#pragma once
 
-int main(){
-    printf("result : %d\n", sum(10));
+int sum(int n){
+    int sum = 0;
+
+    for(int i = 1; i <= n; i++){
+        sum += i;
+    }
+
+    return sum;
 }
